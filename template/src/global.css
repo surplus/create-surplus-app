@@ -15,3 +15,10 @@ div#root {
 	justify-content: center;
 	align-items: center;
 }
+
+/* To define a global (non-namespaced) class, use @global */
+@global .result {
+	font-weight: bold;
+	font-family: monospace;
+	color: #0f0;
+}

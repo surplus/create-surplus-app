@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@surplus/create-surplus-app':
+        specifier: 'link:'
+        version: 'link:'
       arg:
         specifier: ^5.0.2
         version: 5.0.2

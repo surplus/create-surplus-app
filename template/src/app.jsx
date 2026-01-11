@@ -1,31 +1,8 @@
 import S from "@surplus/s";
 
-const Calculator = () => {
-	const formula = S.data("2 * (2 * 2 + 2) * 2 * 2 - 2 * 2 - 2");
-	const calculation = S(() => {
-		const f = formula();
-		if (!f) return 0;
-		if (/[^0-9+\-*/(). ]/.test(f)) return false;
-		// eslint-disable-next-line no-eval
-		return eval(f);
-	});
+import "./global.css";
 
-	let input;
-	return (
-		<div class="calculator">
-			<label for="formula">Enter a formula:</label>
-			<input
-				type="text"
-				value={S.sample(formula)}
-				ref={input}
-				on:input={() => formula(input.value)}
-			/>
-			<span class="result">
-				= {calculation() !== false ? calculation() : undefined}
-			</span>
-		</div>
-	);
-};
+import Calculator from "./components/Calculator.jsx";
 
 const Root = () => (
 	<div id="root">

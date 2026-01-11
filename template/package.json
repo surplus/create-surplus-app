@@ -11,7 +11,7 @@
 	},
 	"devDependencies": {
 		"@surplus/s": "^1.2.0",
-		"@surplus/esbuild": "^1.2.1",
+		"@surplus/esbuild": "^2.0.1",
 		"@surplus/css": "^0.1.0",
 		"@surplus/types": "^0.1.3",
 		"esbuild": "^0.27.2",
